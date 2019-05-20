@@ -33,7 +33,7 @@ import processing.app.ui.Editor;
 // when creating a tool, the name of the main class which implements Tool must
 // be the same as the value defined for project.name in your build.properties
 
-public class Art_Station_Tool implements Tool {
+public class ArtStation implements Tool {
   Base base;
 
 
@@ -54,6 +54,6 @@ public class Art_Station_Tool implements Tool {
 
     // Fill in author.name, author.url, tool.prettyVersion and
     // project.prettyName in build.properties for them to be auto-replaced here.
-    System.out.println("Hello Tool. ##tool.name## ##tool.prettyVersion## by ##author##");
+    System.out.println("Hello Darkness My Old Friend. ##tool.name## ##tool.prettyVersion## by ##author##");
   }
 }
