@@ -25,35 +25,48 @@
 
 package template.tool;
 
+import javafx.application.Platform;
 import processing.app.Base;
 import processing.app.tools.Tool;
-import processing.app.ui.Editor;
-
+import processing.core.PApplet;
+import artstationapplication.ArtStationApplication; //needed?
 
 // when creating a tool, the name of the main class which implements Tool must
 // be the same as the value defined for project.name in your build.properties
 
 public class ArtStation implements Tool {
   Base base;
-
+  ArtStationApplication app;
+  boolean running = false;
 
   public String getMenuTitle() {
     return "##tool.name##";
   }
 
-
   public void init(Base base) {
     // Store a reference to the Processing application itself
     this.base = base;
-  }
-
+  } 
 
   public void run() {
-    // Get the currently active Editor to run the Tool on it
-    Editor editor = base.getActiveEditor();
-
-    // Fill in author.name, author.url, tool.prettyVersion and
-    // project.prettyName in build.properties for them to be auto-replaced here.
-    System.out.println("Hello Darkness My Old Friend. ##tool.name## ##tool.prettyVersion## by ##author##");
+  	if(!running) {
+	    // Fill in author.name, author.url, tool.prettyVersion and
+	    // project.prettyName in build.properties for them to be auto-replaced here.
+	    System.out.println("##tool.name## ##tool.prettyVersion## by ##author##");
+	    System.out.println("Art Station may take a few moments to launch.");
+	    
+      String[] processingArgs = {"Art Station"};
+      app = new ArtStationApplication();
+      PApplet.runSketch(processingArgs, app);
+      running = true;
+	}
+	else {
+		//Adds to the FX Application thread
+		Platform.runLater(new Runnable() {
+			public void run() { 
+				app.getWindow().show();
+	        }
+		});
+	}
   }
 }
