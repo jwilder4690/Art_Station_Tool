@@ -23,7 +23,7 @@
  * @version  ##tool.prettyVersion##
  */
 
-package template.tool;
+package artstationapplication;
 
 import javafx.application.Platform;
 import processing.app.Base;

@@ -2,16 +2,15 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/Elie/Desktop/Art_Station_Tool/lib/lib/batik-awt-util-1.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Elie/Desktop/Art_Station_Tool/lib/lib/batik-dom-1.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Elie/Desktop/Art_Station_Tool/lib/lib/batik-ext-1.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Elie/Desktop/Art_Station_Tool/lib/lib/batik-svggen-1.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Elie/Desktop/Art_Station_Tool/lib/lib/batik-util-1.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Elie/Desktop/Art_Station_Tool/lib/lib/batik-xml-1.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Elie/Desktop/Art_Station_Tool/lib/lib/core.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Elie/Desktop/Art_Station_Tool/lib/lib/svg.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/processing-app"/>
-	<classpathentry kind="lib" path="C:/Users/wilder4690/Documents/Eclipse/eclipse/libs/pde.jar"/>
-	<classpathentry kind="lib" path="C:/Users/wilder4690/Documents/Eclipse/eclipse/libs/core.jar"/>
-	<classpathentry kind="lib" path="C:/Users/wilder4690/Documents/Eclipse/eclipse/libs/ArtStationApplication.jar"/>
-	<classpathentry kind="lib" path="C:/Users/wilder4690/Documents/Eclipse/eclipse/libs/lib/batik-awt-util-1.8.jar"/>
-	<classpathentry kind="lib" path="C:/Users/wilder4690/Documents/Eclipse/eclipse/libs/lib/batik-dom-1.8.jar"/>
-	<classpathentry kind="lib" path="C:/Users/wilder4690/Documents/Eclipse/eclipse/libs/lib/batik-ext-1.8.jar"/>
-	<classpathentry kind="lib" path="C:/Users/wilder4690/Documents/Eclipse/eclipse/libs/lib/batik-svggen-1.8.jar"/>
-	<classpathentry kind="lib" path="C:/Users/wilder4690/Documents/Eclipse/eclipse/libs/lib/batik-util-1.8.jar"/>
-	<classpathentry kind="lib" path="C:/Users/wilder4690/Documents/Eclipse/eclipse/libs/lib/batik-xml-1.8.jar"/>
-	<classpathentry kind="lib" path="C:/Users/wilder4690/Documents/Eclipse/eclipse/libs/lib/svg.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/processing-core"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
